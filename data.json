@@ -1,0 +1,319 @@
+{
+    "kind": "youtube#searchListResponse",
+    "etag": "o5wl3KyNMWwk2df0QUYsbNGBOFA",
+    "nextPageToken": "CAkQAA",
+    "regionCode": "MA",
+    "pageInfo": {
+      "totalResults": 297,
+      "resultsPerPage": 9
+    },
+    "items": [
+      {
+        "kind": "youtube#searchResult",
+        "etag": "SK_KP4JBUHP_L31vB4cLEi0apRw",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "XjUP8Dpc6Z4"
+        },
+        "snippet": {
+          "publishedAt": "2022-08-11T13:47:40Z",
+          "channelId": "UCgq_SIC_NbPFeD8kNPTeoPA",
+          "title": "نكملو التلقيح",
+          "description": "بخطوة صغيرة نديروا التلقيح، نحميو حبابنا ولي عزاز علينا، ونرجعو أيامنا الزوينة لي افتقدناها...نكملو التلقيح حيت كل واحد فينا عارف ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/XjUP8Dpc6Z4/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/XjUP8Dpc6Z4/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/XjUP8Dpc6Z4/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Sehati صحتي",
+          "liveBroadcastContent": "none",
+          "publishTime": "2022-08-11T13:47:40Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "2021_Q1XfGTD8aH8TGMl-3sHKL8",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "hi85xvtnKfU"
+        },
+        "snippet": {
+          "publishedAt": "2022-08-05T10:29:40Z",
+          "channelId": "UCgq_SIC_NbPFeD8kNPTeoPA",
+          "title": "نكملو التلقيح حيت كلنا مسؤولين وحيت كل واحد فينا عارف علاش",
+          "description": "نكملو التلقيح حيت كلنا مسؤولين وحيت كل واحد فينا عارف علاش. #لنحافظ_جميعا_على_استقرار_حالتنا_الوبائية #كوفيد_19 ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/hi85xvtnKfU/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/hi85xvtnKfU/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/hi85xvtnKfU/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Sehati صحتي",
+          "liveBroadcastContent": "none",
+          "publishTime": "2022-08-05T10:29:40Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "G7csc3vDYhPf5TfR2pEtKN0RJj4",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "13L-ub_HccM"
+        },
+        "snippet": {
+          "publishedAt": "2022-08-03T10:03:44Z",
+          "channelId": "UCgq_SIC_NbPFeD8kNPTeoPA",
+          "title": "التهاب الكبد الفيروسي &quot;س&quot;",
+          "description": "ماذا نقصد بالتهاب الكبد الفيروسي \"س\" أومايعرف ب l'hépatite c ؟ -كيف يمكننا التحكم في المرض ؟ -كيف يتم تشخيص المرض ؟ -ماهي طرق ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/13L-ub_HccM/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/13L-ub_HccM/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/13L-ub_HccM/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Sehati صحتي",
+          "liveBroadcastContent": "none",
+          "publishTime": "2022-08-03T10:03:44Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "vRm8e-GZ7QgZsmETJfnJpMCrspk",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "wKXlthHLsTU"
+        },
+        "snippet": {
+          "publishedAt": "2022-07-27T11:33:59Z",
+          "channelId": "UCgq_SIC_NbPFeD8kNPTeoPA",
+          "title": "مرض التهاب الكبد الفيروسي  س",
+          "description": "الحملة الوطنية للتحسيس والكشف المبكر عن التهاب الكبد الفيروسي \"س\" #من_أجل_مغرب_بدون_التهاب_الكبد_الفيروسي_س ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/wKXlthHLsTU/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/wKXlthHLsTU/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/wKXlthHLsTU/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Sehati صحتي",
+          "liveBroadcastContent": "none",
+          "publishTime": "2022-07-27T11:33:59Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "sKXbY-YByPSn889H6TYEIurnEFk",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "LBv8ykJdACo"
+        },
+        "snippet": {
+          "publishedAt": "2022-07-21T09:53:55Z",
+          "channelId": "UCgq_SIC_NbPFeD8kNPTeoPA",
+          "title": "مانساوش الجرعة التذكيرية من اللقاح المضاد لـفيروس كوفيد-19",
+          "description": "مانساوش الجرعة التذكيرية من اللقاح المضاد لـفيروس كوفيد-19 #لنحافظ_جميعا_على_استقرار_حالتنا_الوبائية #كوفيد_19 #التلقيح ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/LBv8ykJdACo/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/LBv8ykJdACo/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/LBv8ykJdACo/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Sehati صحتي",
+          "liveBroadcastContent": "none",
+          "publishTime": "2022-07-21T09:53:55Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "k91xP8Sdv4sNJWlgEZGjpzW9Be8",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "MxLpwBkHz8k"
+        },
+        "snippet": {
+          "publishedAt": "2022-07-12T20:55:24Z",
+          "channelId": "UCgq_SIC_NbPFeD8kNPTeoPA",
+          "title": "الجرعة التذكيرية لمن ولماذا ومتى؟",
+          "description": "أقرت بلادنا مؤخرا، بناء على معطيات علمية، اعتماد جرعة تذكيرية من اللقاح المضاد المضاد لـفيروس كوفيد-19 لبعض الفئات المعرضة أكثر ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/MxLpwBkHz8k/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/MxLpwBkHz8k/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/MxLpwBkHz8k/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Sehati صحتي",
+          "liveBroadcastContent": "none",
+          "publishTime": "2022-07-12T20:55:24Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "6Afkw6XqzIdXRmvxjmGRVG7BXLE",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "YGrT9XKq1X8"
+        },
+        "snippet": {
+          "publishedAt": "2022-07-08T23:00:52Z",
+          "channelId": "UCgq_SIC_NbPFeD8kNPTeoPA",
+          "title": "الجرعة التذكيرية لمن ولماذا ومتى؟",
+          "description": "أقرت بلادنا مؤخرا، بناء على معطيات علمية، اعتماد جرعة تذكيرية من اللقاح المضاد المضاد لـفيروس كوفيد-19 لبعض الفئات المعرضة أكثر ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/YGrT9XKq1X8/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/YGrT9XKq1X8/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/YGrT9XKq1X8/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Sehati صحتي",
+          "liveBroadcastContent": "none",
+          "publishTime": "2022-07-08T23:00:52Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "Kh2YhiXYg-V4gQcqI3uZjC9sBP8",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "Yl0xfNo9PbU"
+        },
+        "snippet": {
+          "publishedAt": "2022-07-07T10:47:03Z",
+          "channelId": "UCgq_SIC_NbPFeD8kNPTeoPA",
+          "title": "التبرع بالدم مسؤولية الجميع",
+          "description": "اليوم العالمي للتبرع بالدم \"التبرع بالدم مسؤولية الجميع\" للمزيد من المعلومات حول هذا الموضوع اضغطوا على الرابط التالي: ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/Yl0xfNo9PbU/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/Yl0xfNo9PbU/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/Yl0xfNo9PbU/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Sehati صحتي",
+          "liveBroadcastContent": "none",
+          "publishTime": "2022-07-07T10:47:03Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "0myt4Ysqcahi0dWmCV2wFMM56mg",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "WM3elmXf8Rk"
+        },
+        "snippet": {
+          "publishedAt": "2022-05-17T07:44:16Z",
+          "channelId": "UCgq_SIC_NbPFeD8kNPTeoPA",
+          "title": "الحملة الوطنية لتشجيع الرضاعة الطبيعية",
+          "description": "الحملة_الوطنية_لتشجيع_الرضاعة_الطبيعية #الرضاعة_الطبيعية_استثمار_يضمن_صحة_طفلي_في_الصغر_والكبر ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/WM3elmXf8Rk/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/WM3elmXf8Rk/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/WM3elmXf8Rk/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Sehati صحتي",
+          "liveBroadcastContent": "none",
+          "publishTime": "2022-05-17T07:44:16Z"
+        }
+      }
+    ]
+  }
+  

@@ -1,0 +1,206 @@
+
+.section-cards {
+    z-index: 3;
+    position: relative;
+}
+
+.section-gray {
+    background: #E5E5E5;
+    padding: 60px 0 30px 0;
+}
+
+
+/*---------------------------------------------------------------------- /
+CARDS
+----------------------------------------------------------------------- */
+
+.section-cards-vedio .card {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    color: rgba(0, 0, 0, 0.87);
+    background: #fff;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.section-cards-vedio .card .card-image {
+    height: 60%;
+    position: relative;
+    overflow: hidden;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: -30px;
+    border-radius: 6px;
+    border: 1px solid blueviolet;
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.section-cards-vedio .card .card-image .vid {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    pointer-events: none;
+}
+
+.section-cards-vedio .card .card-image .card-caption {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: #fff;
+    font-size: 1.3em;
+    text-shadow: 0 2px 5px rgba(33, 33, 33, 0.5);
+}
+
+.section-cards-vedio .card img {
+    width: 100%;
+    height: auto;
+}
+
+.section-cards-vedio .card .ftr {
+    margin-top: 15px;
+}
+
+.section-cards-vedio .card .ftr div {
+    display: inline-block;
+}
+
+.section-cards-vedio .card .ftr .author {
+    color: #888;
+}
+
+.section-cards-vedio .card .ftr .stats {
+    float: right;
+    line-height: 30px;
+}
+
+.section-cards-vedio .card .ftr .stats {
+    position: relative;
+    top: 1px;
+    font-size: 14px;
+}
+
+
+/* ============ Card table-card ============ */
+
+.section-cards-vedio .card .table-card {
+    margin-bottom: 0px;
+    text-align: right;
+}
+
+.section-cards-vedio .card .table-card {
+    padding: 15px 30px;
+}
+
+/* ============ Card Blog ============ */
+
+.card-blog {
+    margin-top: 30px;
+}
+
+.card-blog .card-caption {
+    margin-top: 5px;
+}
+
+.card-blog .card-image+.category {
+    margin-top: 20px;
+}
+
+/* ============ Card Category ============ */
+
+.section-cards-vedio .card .table-card .category {
+    position: relative;
+    line-height: 0;
+    margin: 15px 0;
+}
+
+/* ============ Card Author ============ */
+
+.section-cards-vedio .card .table-card .author .avatar {
+    width: 36px;
+    height: 36px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.section-cards-vedio .card .table-card .author a {
+    color: #333;
+    text-decoration: none;
+}
+
+.section-cards-vedio .card .table-card .author a .ripple-cont {
+    display: none;
+}
+
+.section-cards-vedio .card .table-card .card-description p {
+    color: #888;
+}
+
+.section-cards-vedio .card .table-card .card-caption,
+.section-cards-vedio .card .table-card .card-caption a {
+    color: #333;
+    text-decoration: none;
+}
+
+.section-cards-vedio .card .table-card .card-caption {
+    font-weight: 700;
+    font-family: "Roboto Slab", "Times New Roman", serif;
+}
+
+/* ============ Text Color ============ */
+.text-warning {
+    color: #ff9800;
+}
+
+.text-primary {
+    color: #9c27b0;
+}
+
+.text-danger {
+    color: #f44336;
+}
+
+.text-success {
+    color: #4caf50;
+}
+
+.text-info {
+    color: #00bcd4;
+}
+
+.text-rose {
+    color: #e91e63;
+}
+
+.text-gray {
+    color: #888;
+}
+
+/*---------------------------------------------------------------------- /
+BOOTSTRAP COL-MD-12 CLASS
+----------------------------------------------------------------------- */
+
+article.col-md-12 {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+/*---------------------------------------------------------------------- /
+FONT AWESOME FA CLASS
+----------------------------------------------------------------------- */
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+ .hide {
+
+    display: none;
+    
+}

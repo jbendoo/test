@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <!-- Bootstrap cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css"
+    integrity="sha384-eoTu3+HydHRBIjnCVwsFyCpUDZHZSFKEJD0mc3ZqSBSb6YhZzRHeiomAUWCstIWo" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @charset "UTF-8";
+        @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+        @import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
+        @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+        :root {
+            /* GENERAL FONT */
+            --font1: "Titillium Web", sans-serif;
+            --font2: "Roboto", sans-serif;
+            /* GENERAL COLOR */
+            --bg-col-1: #0059b3;
+            --bg-col-2: #dc3545;
+            --bg-col-3: #fff;
+            --bg-col-4: #024c96;
+            --tx-color-1: #fff;
+            --tx-color-2: #000;
+            --tx-color-3: #0059b3;
+            /* READ MORE COLOR */
+            --tx-rm-color-1: #fff;
+            --bg-rm-color-1: #fff;
+            /* TAG BOTTOM-RIGHT COLOR */
+            /* FOOTER CARD COLOR */
+            --bg-ft-col-1: #0059b3;
+            --tx-ft-color-1: #fff;
+            --tx-news-section-title: #212529;
+            --bg-news-section: aliceblue;
+            --bg-focus-card-overlay: rgba(0, 89, 179, 0.5);
+            --tx-focus-hover: #fff;
+            --tx-focus-font-weight: 400;
+            --tx-focus-tag-color-1: #fff;
+            --bg-focus-tag-color-1: #0059b3;
+            --bg-focus-cat: #0059b3;
+            --tx-focus-cat: #fff;
+            --bg-focus-footer: #0059b3;
+            --tx-focus-footer: #fff;
+            --bg-focus-card: #fff;
+            --tx-focus-card: #000;
+            --tx-button: #fff;
+            --bg-button: #0059b3;
+        }
+
+      
+        /* button-archive */ 
+
+        .btn-archive {
+            color: var(--tx-button);
+            background: var(--bg-button);
+            border-color: var(--bg-button-border);
+            -webkit-transition: all 0.3s linear 0s;
+            transition: all 0.3s linear 0s;
+        }
+        .btn-archive:hover {
+            color: var(--tx-button-hover);
+            background-color: var(--bg-button-hover);
+            border-color: var(--bg-button-hover);
+        }
+        .btn-archive:focus {
+            -webkit-box-shadow: 0 0 0 0.25rem var(--bg-button-focus);
+            box-shadow: 0 0 0 0.25rem var(--bg-button-focus);
+        }
+
+        /******************************************/
+        .news-section {
+            background: var(--bg-news-section);
+            font-family: var(--font1);
+            -webkit-transition: all 0.3s linear 0s;
+            transition: all 0.3s linear 0s;
+        }
+
+        .news-section .title-section {
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--tx-news-section-title);
+        }
+
+        .news-section .card {
+            font-size: 1rem;
+            border: var(--focus-border-card);
+        }
+
+        .news-section .card .card-body {
+            background: var(--bg-focus-card);
+            color: var(--tx-focus-card);
+        }
+
+        .news-section .card .card-body .card-text {
+            font-weight: var(--tx-focus-font-weight);
+        }
+
+        .news-section .card .card-image {
+            position: relative;
+        }
+
+        .news-section .card .card-image .image-overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: 0.5s ease;
+            background: var(--bg-focus-card-overlay);
+        }
+
+        .news-section .card .card-image:hover .image-overlay {
+            opacity: 1;
+        }
+
+        .news-section .card .text-img-over {
+            position: relative;
+        }
+
+        .news-section .card .text-img-over .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: 0.5s ease;
+            background: var(--bg-focus-card-overlay);
+        }
+
+        .news-section .card .text-img-over:hover .overlay {
+            opacity: 1;
+        }
+
+        .news-section .card .social-hover {
+            color: var(--tx-focus-hover);
+            font-size: 30px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        
+
+        .news-section .card .hover-text {
+            position: relative;
+            text-align: center;
+            color: var(--tx-focus-hover);
+        }
+
+        .news-section .card .bottom-right-tag {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background: var(--bg-focus-tag-color-1);
+            padding: 5px 10px 5px 10px;
+            border-top-left-radius: calc(.25rem - 1px);
+            font-size: 0.8rem;
+            font-weight: 200;
+            color: var(--tx-focus-tag-color-1);
+            z-index: 1;
+        }
+
+        .news-section .card .bottom-right-tag a {
+            color: var(--tx-focus-tag-color-1);
+            text-decoration: none;
+        }
+
+        .news-section .card .bottom-right-tag a:hover {
+            color: var(--tx-focus-tag-color-1);
+            text-decoration: underline;
+        }
+
+        .news-section .card .sub-cat {
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        .news-section .card .sub-cat .bg-category {
+            background: var(--bg-focus-cat);
+            color: var(--tx-focus-cat);
+        }
+
+        .news-section .card .sub-cat a {
+            color: var(--tx-focus-tag-a);
+        }
+
+        .news-section .card .card-title {
+            font-family: var(--font1);
+            font-weight: 600;
+            font-size: 1.3rem;
+            /* height: 73px;
+  overflow: hidden; */
+        }
+
+        .news-section .card .card-footer {
+            background: var(--bg-focus-footer);
+            color: var(--tx-focus-footer);
+        }
+
+        .news-section .card .card-footer .card-footer__info {
+            font-size: 1rem;
+            font-weight: 300;
+            position: relative;
+        }
+
+        .news-section .card .read-more {
+            position: absolute;
+            right: 0;
+            font-weight: 600;
+        }
+
+
+        .news-section .card .read-more-arrow {
+            text-decoration: none;
+            position: relative;
+            margin-right: 15px;
+            color: var(--tx-focus-footer);
+        }
+
+        .news-section .card .read-more-arrow::after 
+        {
+            content: "";
+            /* You should use \ and not /*/
+            font-family: "Font Awesome 5 Free";
+            /* This is the correct font-family*/
+            position: absolute;
+            right: -18px;
+            bottom: 0;
+            color: var(--tx-focus-footer);
+        }
+
+        .news-section .card .read-more-arrow:hover 
+        {
+            color: var(--tx-focus-footer);
+        }
+
+        .news-section .card .read-more-arrow:hover::after 
+        {
+            transform: translate(3px, 0);
+            transition: all 0.1s ease-in;
+            color: var(--tx-focus-footer);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <section id="focus" class="news-section">
+        <div class="container py-5">
+            <div class="container px-0">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="title-section">News</h2>
+                    </div>
+                    <div class="col"> <span class="title-section d-flex justify-content-end"><a
+                                class="btn btn-archive btn-sm" href="#" role="button">Archive</a></span></div>
+
+                </div>
+            </div>
+            <div class="row g-2">
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-image">
+                            <div class="hover-text">
+                                <img src="https://source.unsplash.com/user/xteemu/800x600" class="card-img-top"
+                                    alt="...">
+                                <div class="bottom-right-tag text-uppercase"><a href="">#lorem</a></div>
+                            </div>
+                            <div class="image-overlay"></div>
+                        </div>
+                        <div class="card-body">
+
+                            <h3 class="card-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit</h3>
+                            <div class="text-left my-2">
+                                <div class="sub-cat text-truncate"><span
+                                        class="badge rounded-pill bg-category text-uppercase">topic</span> <a
+                                        href="#">Lorem ipsum dolor sit amet</a></div>
+                            </div>
+                            <p class="card-text">This is a longer card with supporting text below as a natural
+                                lead-in
+                                to
+                                additional content. This content is a little bit longer. This is a longer card
+                                with
+                                supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+
+
+                        </div>
+
+                        <div class="card-footer py-3">
+                            <div class="card-footer__info">
+                                <span><i class="bi bi-calendar3"></i> <span class="ms-2">01/04/2021</span></span>
+                                <span class="read-more">
+                                    <a class="text-uppercase read-more-arrow" href="#">Read more </a>
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
