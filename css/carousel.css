@@ -35,7 +35,11 @@ body {
     padding: 7em 0;
   }
  
-  
+  .card{
+    border: none !important;
+    border-radius: 5px;
+
+  }
  
   
   .img {
@@ -159,28 +163,42 @@ body {
     opacity: 1;
   }
   /*****  navigation  *******/ 
-  #navigation {
+  #navigation 
+  {
   width: 100%;
   height: 400px !important;
-  border:1px solid #FF5722;
+  
   overflow-y: auto;
   overflow-x: hidden;
   height: -moz-calc(100% - (20px + 30px));
   height: -webkit-calc(100% - (20px + 30px));
   height: calc(100% - (20px + 30px));
   transform: translate3d(0px, 0px, 0px) !important;
+  padding: 15px 15px;
+  }
+
+  #navigation .nav-item{
+    color: lightgrey;
+    padding: 10px;
+    border-bottom: 2px solid #eef5f9;
+    height: 100px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+
+#navigation::-webkit-scrollbar 
+{
+  width:5px;
 }
 
-#navigation .owl-stage::-webkit-scrollbar {
-  width: 5px;
-}
-
-#navigation .owl-stage::-webkit-scrollbar-track {
+#navigation::-webkit-scrollbar-track 
+{
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
-#navigation .owl-stage::-webkit-scrollbar-thumb {
-  background-color: #598527;
+#navigation::-webkit-scrollbar-thumb 
+{
+  background-color: #2290bb;
   outline: 1px solid slategrey;
   border-radius: 3px;
 }
@@ -191,11 +209,25 @@ body {
   { 
     font-size: 18px; 
   }
-  #navigation .current .item 
+
+  #navigation .current 
   { 
-    background:#FF5722; 
+    border-left: 5px solid #FF5722; 
+    position: relative;
+    color: black;
   }
-  
+
+  #navigation .current::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-right: 18px solid #FF5722;
+    border-top: 9px solid transparent;
+    border-bottom: 9px solid transparent;
+    position: absolute;
+    top: 40%;
+    left: -20px;
+  }
   
   
   

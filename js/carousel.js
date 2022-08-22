@@ -17,7 +17,7 @@ $(function () {
             $('.featured-carousel').owlCarousel({
                 loop: true,
                 autoplay: true,
-                margin: 30,
+                margin: 20,
                 animateOut: 'fadeOut',
                 animateIn: 'fadeIn',
                 smartSpeed: 15000,
@@ -36,23 +36,31 @@ $(function () {
 });
 
 $(function () {
-
     var owl = $('.featured-carousel');
     owl.owlCarousel();
     // Listen to owl events:
     owl.on('changed.owl.carousel', function (event) {
+
+        // get slide index 
+
         var index = event.page.index;
+
         // Select all list items
-        var listItems = $(".list-group-item ");
+        var listItems = $(".nav-item");
 
-        // Remove 'active' tag for all list items
+        // Remove 'current' tag for all list items
         for (let i = 0; i < listItems.length; i++) {
-            listItems[i].classList.remove("active");
-
+            listItems[i].classList.remove("current");
         }
+        // Add 'current' tag for currently selected item
+     
+        $('#item-'+index).addClass('current');
 
-        // Add 'active' tag for currently selected item
-        $('#list' + index).addClass('active');
+        // get the item's postion and move the scroll
+        var container = $('#navigation');
+        var scrollTo = $('#item-'+index);
+	    var position = scrollTo.offset().top - container.offset().top  + container.scrollTop();
+	    container.animate({scrollTop: position});
     });
 
 });
@@ -62,18 +70,4 @@ $(function () {
         $('li.active').removeClass('active');
         $(this).addClass('active');
     });
-});
-
-
-$(function () {
-
-    var owl = $('.nav-carousel');
-    owl.owlCarousel();
-    // Listen to owl events:
-    owl.on('changed.owl.carousel', function (event) {
-        var index = event.page.index;
-        // Select all list items
-        //alert(index);
-    });
-
 });
