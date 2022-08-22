@@ -1,20 +1,10 @@
 $(function () {
 
-    "use strict";
-
-        var fullHeight = function () {
-
-            $('.js-fullheight').css('height', $(window).height());
-            $(window).resize(function () {
-                $('.js-fullheight').css('height', $(window).height());
-            });
-
-        };
-    fullHeight();
+   
 
     var carousel = function () 
         {
-            $('.featured-carousel').owlCarousel({
+            $('.home-carousel').owlCarousel({
                 loop: true,
                 autoplay: true,
                 margin: 20,
@@ -36,7 +26,7 @@ $(function () {
 });
 
 $(function () {
-    var owl = $('.featured-carousel');
+    var owl = $('.home-carousel');
     owl.owlCarousel();
     // Listen to owl events:
     owl.on('changed.owl.carousel', function (event) {
