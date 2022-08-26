@@ -32,29 +32,44 @@ $(function () {
 
         var index = event.page.index;
 
+        // city name 
+        var city = "" ; 
+
+        switch (index) {
+            case 0:
+              city = "Rabat";
+              break;
+            case 1:
+              city = "Sale";
+              break;
+            case 2:
+               city = "Kenitra";
+              break;
+            case 3:
+              city = "Temara";
+              break;
+            case 4:
+              city = "Khemisset";
+              break;
+            case 5:
+              city = "SidiSlimane";
+              break;
+            case 6:
+              city = "SidiKacem";
+          }
+
         // Select all list items
-        var listItems = $(".nav-item");
+        var listItems = $(".ville");
 
         // Remove 'current' tag for all list items
         for (let i = 0; i < listItems.length; i++) {
-            listItems[i].classList.remove("current");
+            listItems[i].classList.remove("is_active");
         }
         // Add 'current' tag for currently selected item
      
-        $('#item-'+index).addClass('current');
+        $('#ville-'+city).addClass('is_active');
 
-        // get the item's postion and move the scroll
-        var container = $('#navigation');
-        var scrollTo = $('#item-'+index);
-	    var position = scrollTo.offset().top - container.offset().top  + container.scrollTop();
-	    container.animate({scrollTop: position});
+       
     });
 
-});
-
-$(function () {
-    $('#menu li').on('click', function () {
-        $('li.active').removeClass('active');
-        $(this).addClass('active');
-    });
 });

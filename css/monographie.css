@@ -1,0 +1,26 @@
+
+/************   is active ?    *************/
+.map a.is_active path {
+    fill: #4CAF50
+}
+
+.map a path:hover {
+    fill: #53497a;
+}
+
+.map {
+
+    width: 60%;
+    margin: auto;
+}
+
+.map path {
+    fill: #808080;
+    stroke: #ffffff;
+    stroke-width: 4px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 4;
+    stroke-dasharray: none;
+    stroke-opacity: 1
+}
