@@ -1,19 +1,19 @@
 $(function () {
     var carousel = function () 
         {
-            $('.home-carousel').owlCarousel({
+            $('.mono-carousel').owlCarousel({
                 loop: true,
                 autoplay: true,
-                margin: 20,
+                margin: 0,
                 animateOut: 'fadeOut',
                 animateIn: 'fadeIn',
-                smartSpeed: 15000,
+                //smartSpeed: 15000,
                 nav: true,
-                dots: true,
+                dots: false,
                 autoplayHoverPause: false,
                 URLhashListener: true,
-                startPosition: 'URLHash',
-                items: 1,
+                
+                items: 3,
                 navText: ["<span class='ion-ios-arrow-back'></span>", "<span class='ion-ios-arrow-forward'></span>"],
             });
 
@@ -21,9 +21,9 @@ $(function () {
     carousel();
 
 });
-
+/*
 $(function () {
-    var owl = $('.home-carousel');
+    var owl = $('.mono-carousel');
     owl.owlCarousel();
     // Listen to owl events:
     owl.on('changed.owl.carousel', function (event) {
@@ -72,4 +72,4 @@ $(function () {
        
     });
 
-});
+});*/

@@ -1,4 +1,146 @@
 
+
+/****************** title ***************************/ 
+
+
+.title-heading {
+    position: relative;
+    padding-bottom: .5em;
+}
+
+.title-heading:after {
+    content: '';
+    width: 5%;
+    border-bottom: 1px solid #FFF;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    border-bottom: 4px solid #ff5959;
+}
+
+
+/*************** monographie caroussel ***************/ 
+  
+.mono-carousel {
+    position: relative;
+  }
+  .mono-carousel .owl-item {
+    opacity: 1;
+  }
+  .mono-carousel .owl-item.active {
+    opacity: 1;
+  }
+  .mono-carousel .owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    
+  }
+  .mono-carousel .owl-nav .owl-prev,
+  .mono-carousel .owl-nav .owl-next {
+    position: absolute;
+    transform: translateY(-50%);
+    margin-top: 0;
+    color: rgb(255, 255, 255) !important;
+    transition: 0.7s;
+    opacity: 1;
+    
+  }
+  .mono-carousel .owl-nav .owl-prev span:before,
+  .mono-carousel .owl-nav .owl-next span:before {
+    font-size:4em;
+    opacity: 0.7;
+  }
+  .mono-carousel .owl-nav .owl-prev {
+    left: 20px;
+  }
+  .mono-carousel .owl-nav .owl-next {
+    right: 20px;
+  }
+  .mono-carousel .owl-dots {
+    text-align: center;
+    margin-top: 0;
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    left: 0;
+  }
+  .mono-carousel .owl-dots .owl-dot {
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    position: relative;
+  }
+  .mono-carousel .owl-dots .owl-dot:hover, .mono-carousel .owl-dots .owl-dot:focus {
+    outline: none !important;
+  }
+  .mono-carousel .owl-dots .owl-dot.active {
+    background: #ff5959;
+  }
+  
+  .mono-carousel.owl-drag .owl-item {
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+  }
+  
+  .hero {
+    position: relative;
+  }
+  
+  .img-container {
+    width: 100%;
+  }
+  .img-container .img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 280px;
+    position: relative;
+    z-index: 0;
+    -webkit-box-shadow: 0px 20px 35px -30px rgba(0, 0, 0, 0.26);
+    -moz-box-shadow: 0px 20px 35px -30px rgba(0, 0, 0, 0.26);
+    box-shadow: 0px 20px 35px -30px rgba(0, 0, 0, 0.26);
+  }
+  .img-container .img:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    z-index: -1;
+    opacity: 0.3;
+  }
+  .img-container .img .icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #fff;
+    display: block;
+    opacity: 0;
+    transition: 0.3s;
+  }
+  .img-container .text h3 {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .img-container .text h3 a {
+    color: #000;
+  }
+  .img-container .text span {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .img-container:hover .img .icon {
+    opacity: 1;
+  }
 /************   is active ?    *************/
 .map a.is_active path {
     fill: #4CAF50
@@ -8,13 +150,18 @@
     fill: #53497a;
 }
 
-.map {
+.map  {
 
     width: 60%;
     margin: auto;
 }
+.map-presentation {
 
-.map path {
+    width: 100%;
+    margin: auto;
+}
+
+.map path ,.map-presentation path {
     fill: #808080;
     stroke: #ffffff;
     stroke-width: 4px;
@@ -24,3 +171,167 @@
     stroke-dasharray: none;
     stroke-opacity: 1
 }
+
+  
+ 
+ 
+/***********************************************************************************************/
+
+  .tabbable-panel {
+        /*border:1px solid #eee;*/
+        padding: 10px;
+     }
+  
+  .tabbable-line .nav-tabs {
+    border: none;
+    margin: 0px;
+  }
+
+  .tabbable-line nav .nav-tabs button {
+    font-weight: 400;
+    font-size: 1em;
+    margin-right: 2px;
+    border:0;
+    color: #a6a6a6;
+    transition: 0.3s;
+  }
+ 
+  .tabbable-line nav .nav-tabs  button:hover {
+    border-bottom: 3px solid rgb(80,144,247);
+  }
+  .tabbable-line nav .nav-tabs  button.active {
+    background: none !important;
+    color: #333333;
+    border-bottom: 3px solid #ff5959;
+    position: relative;
+    font-weight: 500;
+    background-color: #ff5959;
+    
+  }
+
+  .tabbable-line  .tab-content {
+    margin-top: -3px;
+    background-color: #eef5f9;
+    border: 0;
+    border-top: 1px solid #eee;
+    padding: 20px 20px;
+  }
+
+  .card-map {
+    /*position: relative;*/
+    display: inline-block;
+    width: 400px;
+    padding: .5em;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    border: 0;
+    background-color: #fff;
+    
+    font-size: .8em;
+  }
+.tab-card {
+  /*position: relative;*/
+  display: inline-block;
+  min-width: 150px;
+  
+  padding: .5em;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  border: 0;
+  
+  color: #fff;
+  font-size: .8em;
+}
+#card-1{
+    background-image: linear-gradient(to bottom, #e50077 0%, #f5aaaa 100%);
+}
+#card-2{
+    background-image: linear-gradient(to bottom, #ee7011 0%, #fad07d 100%);
+}
+#card-3{
+    background-image: linear-gradient(to bottom, #2d5394 0%, #b28cfa 100%);
+}
+#card-4{
+    background-image: linear-gradient(to bottom, #008384 0%, #86f7c2 100%);
+}
+/*.tab-card .circle {
+    border: 1px solid red;
+  border-radius: 3px;
+  width: 50px;
+  height: 50px;
+  background: black;
+  position: absolute;
+  right: 0px;
+  top: 0;
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  border-bottom-left-radius: 60px;
+}*/
+
+
+.tab-card .content {
+  margin-top: .8em;
+  
+}
+
+.tab-card h6 {
+  
+  letter-spacing: 0.1em;
+  font-weight: 300;
+}
+.tab-card .items {
+  margin-bottom: 3px;
+}
+.tab-card .items span {
+  text-decoration: none !important;
+  font-weight: 300;
+}
+#square-Rabat{
+    color: #e50077;
+}
+#square-Sale{
+    color: #009fe3;
+}
+#square-Temara{
+    color: #b5c904;
+}
+#square-Kenitra{
+    color: #ee7011;
+}
+#square-Khemisset{
+    color:  #6f2ba0;
+}
+#square-SidiKacem{
+    color:  #2d5394;
+}
+#square-SidiSlimane{
+    color: #008384;
+}
+.map-presentation #ville-Rabat path {
+    fill: #e50077;
+}
+.map-presentation #ville-Sale path {
+    fill: #009fe3;
+}
+.map-presentation #ville-Temara path {
+    fill: #b5c904;
+}
+.map-presentation #ville-Kenitra path {
+    fill: #ee7011;
+}
+.map-presentation #ville-Khemisset path {
+    fill: #6f2ba0;
+}
+.map-presentation #ville-SidiKacem path {
+    fill: #2d5394;
+}
+.map-presentation #ville-SidiSlimane path {
+    fill: #008384;
+}
+
+#liste-ville li{
+color: #32465B;
+list-style: none;
+font-size: 1em;
+}
+
+
